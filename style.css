@@ -53,9 +53,12 @@ header {
   height: 100%;
   float: left;
   background: #FFFFFF;
-  line-height: 80px;
-  padding: 0 40px;
+  line-height: 40px;
+  padding: 20px 34px;
+  margin-top: -2px;
   margin-right: 7px;
+  position: relative;
+  font-size: 13px;
 
 
 }
@@ -64,13 +67,42 @@ header {
   cursor: pointer;
 }
 
-.header_right .item a {
+.item a {
   text-decoration: none;
   color: lightgrey;
 
 }
 
-.header_right .item a:hover {
-  background: black;
+.item a:hover {
+  background: #FFFFFF;
+  color: black;
 
+}
+
+
+.dropdown_menu {
+  height: 100% auto;
+  background-color: #39C2E9;
+  width: 177px;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  padding: 3px;
+  display: none;
+  border-radius: 3px;
+
+}
+
+.dropdown_menu .dropdown_item:hover {
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.dropdown_item a {
+  color: black;
+}
+
+.dropdown_menu.show {
+  display: block;
 }
